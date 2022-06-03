@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+
+{%block body%}
+
+<h3>Geben Sie Ihre Daten ein:</h3>
+<form method="post" action="/predict">
+    <table>
+        <p>{{the_title}}</p>
+        <tr><td>Postleitzahl</td><td><input name="zip" type="number"></input></td></tr>
+        <tr><td>Quadratmeter</td><td><input name="area" type="number"></input></tr></td>
+        <tr><td>Anzal der Zimmer</td><td><input name="rooms" type="number"></input></tr></td>
+        
+    </table>
+    <p><input type="submit" value="Berechnen"></p>
+</form>
+
+{%endblock%}
